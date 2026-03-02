@@ -1,7 +1,8 @@
 # js-neural-network-edu
 
-Interactive neural network visualization and training tool built with JavaScript.
-Live at: 
+Interactive neural network visualization and training tool built with JavaScript.  
+
+Live at: [https://guitareren.github.io/js-neural-network-edu/](https://guitareren.github.io/js-neural-network-edu/)
 
 ## 📌 About the Project
 This project is a simple and clear educational tool designed for those who want to learn the basic working principles of artificial neural networks.  
