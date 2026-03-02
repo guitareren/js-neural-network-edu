@@ -1,0 +1,125 @@
+/* Genel yapı */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #ffffff);
+  color: #333;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+/* Başlıklar */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+/* Canvas için modern görünüm */
+canvas {
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,0.1), 
+    inset 0 0 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover efekti ile etkileşim hissi */
+canvas:hover {
+  transform: scale(1.02);
+  box-shadow: 
+    0 6px 18px rgba(0,0,0,0.15), 
+    inset 0 0 25px rgba(0,0,0,0.08);
+}
+
+/* Canvas içindeki yazılar için okunaklı font */
+canvas {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+/* Butonlar */
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #45a049, #1b5e20);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Tablo */
+table {
+  margin: 15px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: #4CAF50;
+  color: #fff;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* Input alanları */
+input {
+  width: 60px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+}
+
+/* Sonuç tabloları */
+#trainResultsTable, 
+#testResultsTable {
+  margin-top: 25px;
+}

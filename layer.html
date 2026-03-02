@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Neural Network Görselleştirme</title>
+  <!-- Harici CSS dosyası -->
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <h2>Neural Network Patika Görselleştirme</h2>
+
+  <h3>Input (2x1)</h3>
+  <table id="inputMatrix">
+    <tr>
+      <td><input type="number" value="1"></td>
+    </tr>
+    <tr>
+      <td><input type="number" value="0"></td>
+    </tr>
+  </table>
+
+  <h3>Target Output (2x1)</h3>
+  <table id="targetMatrix">
+    <tr>
+      <td><input type="number" value="1"></td>
+    </tr>
+    <tr>
+      <td><input type="number" value="0"></td>
+    </tr>
+  </table>
+
+  <button onclick="train()">Train Et</button>
+  <button onclick="test()">Test Et</button>
+  <br><br>
+
+  <canvas id="networkCanvas" width="600" height="400"></canvas>
+
+  <h3>Test Sonucu</h3>
+  <table id="testResultsTable">
+    <thead>
+      <tr>
+        <th>Mod</th>
+        <th>Input</th>
+        <th>Hidden</th>
+        <th>Output</th>
+        <th>Target</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Eğitim Sonuçları</h3>
+  <table id="trainResultsTable">
+    <thead>
+      <tr>
+        <th>Mod</th>
+        <th>Input</th>
+        <th>Hidden</th>
+        <th>Output</th>
+        <th>Target</th>
+        <th>Error</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+
+
+  <!-- Harici JS dosyası -->
+  <script src="function.js"></script>
+</body>
+
+</html>
